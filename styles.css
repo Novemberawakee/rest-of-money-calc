@@ -1,0 +1,176 @@
+body {
+    background-image: url(money.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: #dcdcdc;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(26, 26, 64, 0.6);
+    color: #fff;
+    width: 550px;
+    height: 700px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #DFF6FF;
+    font-size: 22px;
+}
+
+form {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+input {
+    font-family: 'Quicksand', sans-serif;
+    width: 200px;
+}
+
+#savings {
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #DFF6FF;
+    border: none;
+    color: rgb(26, 26, 64, 0.6);
+    width: 210px;
+}
+
+#select {
+    font-family: 'Quicksand', sans-serif;
+    display: none;
+    width: 210px;
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#saved, #rest {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    width: 100px;
+    background-color: rgb(204, 209, 228, 0.5);
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+#btn {
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #DFF6FF;
+    border: none;
+    color: rgb(26, 26, 64, 0.6);
+    width: 550px;
+    margin-top: 25px;
+}
+
+@media all and (max-width: 1024px) {
+    #all {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 540px) {
+    #container {
+        width: 400px;
+        height: 700px;
+    }
+    form {
+        width: 400px;
+    }
+    #btn {
+        width: 400px;
+    }
+}
+
+@media all and (max-width: 414px) {
+    #container {
+        width: 340px;
+        height: 700px;
+    }
+    form {
+        width: 340px;
+    }
+    #btn {
+        width: 340px;
+    }
+}
+
+@media all and (max-width: 393px) {
+    #container {
+        width: 320px;
+        height: 700px;
+        margin: 10px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    form {
+        width: 320px;
+    }
+    #btn {
+        width: 320px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    #container {
+        width: 320px;
+        height: 700px;
+        margin: 3px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    form {
+        width: 320px;
+    }
+    #btn {
+        width: 320px;
+    }
+}
+
+@media all and (max-width: 280px) {
+    #container {
+        width: 260px;
+        height: 700px;
+        margin: 3px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    form {
+        width: 260px;
+    }
+    #btn {
+        width: 260px;
+    }
+    #saved, #rest {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+        width: 60px;
+        font-size: 12px;
+    }
+}

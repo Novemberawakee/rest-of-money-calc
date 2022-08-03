@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rest Of Money</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="all">
+        <div id="container">
+            <h1>How much money do you have for spending?</h1>
+            <form>
+                <p>Your monthly salary</p>
+                <input id="income" type="text" placeholder="enter your monthly salary">
+                <p>How much do you want to save?</p>
+                <button id="savings">Savings</button>
+                <select id="select">
+                    <option disabled>Select an option</option>
+                    <option selected value="0.00">No savings</option>
+                    <option value="0.10">10%</option>
+                    <option value="0.15">15%</option>
+                    <option value="0.20">20%</option>
+                    <option value="0.25">25%</option>
+                    <option value="0.30">30%</option>
+                    <option value="0.35">35%</option>
+                    <option value="0.40">40%</option>
+                </select>
+                <p>Rent</p>
+                <input id="rent" type="text" placeholder="enter your monthly rent">
+                <p>Internet bill</p>
+                <input id="internet" type="text" placeholder="enter your internet bill">
+                <p>Phone bill</p>
+                <input id="phone" type="text" placeholder="enter your phone bill">
+                <br>
+                <button id="btn">Calculate</button>
+            </form>
+            <div id="results">
+                <div id="saved">
+                    <p>You saved</p>
+                    <span>$</span>
+                    <span id="savedMoney"></span>
+                </div>
+                <div id="rest">
+                    <p>For spending</p>
+                    <span>$</span>
+                    <span id="restOfMoney"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
